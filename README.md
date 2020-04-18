@@ -1,5 +1,6 @@
 # pcb_quadcopter
-An open-source PCB multirotor project, development in progress
+An open-source PCB multirotor project, development in progress.
+The intent is to make an affordable, simple and customizable quadcopter that can be built and used by anyone. 
 
 ## Inspiration
 
@@ -22,3 +23,11 @@ Here are some of the specifications that I want to follow for this project. They
 * Micro RF SBUS receiver
 * 18650 Li-Ion batteries
 
+## Future implementations/extras
+
+Theese are some features that are cool but aren't included in the base project (yet, hopefully):
+
+* FPV camera and VTX
+* SD card for camera footage
+* RPi 0 support
+* Ardupilot support
