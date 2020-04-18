@@ -1,0 +1,416 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 6050 1700 2    50   Output ~ 0
+POWER_LED
+Wire Wire Line
+	5850 1700 6050 1700
+Text GLabel 5950 1900 2    50   Output ~ 0
+M4
+Text GLabel 5950 2000 2    50   Output ~ 0
+M1
+$Comp
+L Sensor_Motion:MPU-6000 U?
+U 1 1 5E9D6204
+P 9100 4550
+F 0 "U?" H 9100 5431 50  0000 C CNN
+F 1 "MPU-6000" H 9100 5340 50  0000 C CNN
+F 2 "Sensor_Motion:InvenSense_QFN-24_4x4mm_P0.5mm" H 9100 3750 50  0001 C CNN
+F 3 "https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf" H 9100 4400 50  0001 C CNN
+	1    9100 4550
+	1    0    0    -1  
+$EndComp
+Text GLabel 5950 2200 2    50   Output ~ 0
+GYRO_SCL
+Text GLabel 5950 2300 2    50   Output ~ 0
+GYRO_SDO
+Text GLabel 5950 2400 2    50   Output ~ 0
+GYRO_SDA
+Text GLabel 5950 2500 2    50   Output ~ 0
+BUZZER
+Text GLabel 5950 2600 2    50   Output ~ 0
+UART1_TX
+Text GLabel 5950 2700 2    50   Output ~ 0
+UART1_RX
+Wire Wire Line
+	5850 1900 5950 1900
+Wire Wire Line
+	5850 2000 5950 2000
+Wire Wire Line
+	6650 2100 6600 2100
+Wire Wire Line
+	6600 1950 6600 2100
+Wire Wire Line
+	6600 1650 6600 1600
+$Comp
+L Device:R R2_G
+U 1 1 5E9EC421
+P 6600 1800
+F 0 "R2_G" H 6670 1846 50  0000 L CNN
+F 1 "10k" H 6670 1755 50  0000 L CNN
+F 2 "" V 6530 1800 50  0001 C CNN
+F 3 "~" H 6600 1800 50  0001 C CNN
+	1    6600 1800
+	1    0    0    -1  
+$EndComp
+Text GLabel 6650 2100 2    50   Output ~ 0
+GYRO_CS
+Text GLabel 6600 1600 1    50   Output ~ 0
+VCC
+Wire Wire Line
+	5850 2100 6600 2100
+Connection ~ 6600 2100
+Wire Wire Line
+	5950 2200 5850 2200
+Wire Wire Line
+	5950 2400 5850 2400
+Wire Wire Line
+	5850 2300 5950 2300
+Wire Wire Line
+	5950 2500 5850 2500
+Wire Wire Line
+	5950 2600 5850 2600
+Wire Wire Line
+	5850 2700 5950 2700
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5EA10445
+P 7350 2800
+F 0 "J1" H 7120 2789 50  0000 R CNN
+F 1 "USB_B_Micro" H 7120 2698 50  0000 R CNN
+F 2 "" H 7500 2750 50  0001 C CNN
+F 3 "~" H 7500 2750 50  0001 C CNN
+	1    7350 2800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R2_USB
+U 1 1 5EA1CD17
+P 6650 2900
+F 0 "R2_USB" V 6857 2900 50  0000 C CNN
+F 1 "22" V 6766 2900 50  0000 C CNN
+F 2 "" V 6580 2900 50  0001 C CNN
+F 3 "~" H 6650 2900 50  0001 C CNN
+	1    6650 2900
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6800 2900 7050 2900
+Wire Wire Line
+	6800 2800 7050 2800
+$Comp
+L Device:R R1_USB
+U 1 1 5EA1C2D4
+P 6650 2800
+F 0 "R1_USB" V 6443 2800 50  0000 C CNN
+F 1 "22" V 6534 2800 50  0000 C CNN
+F 2 "" V 6580 2800 50  0001 C CNN
+F 3 "~" H 6650 2800 50  0001 C CNN
+	1    6650 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 2900 5850 2800
+Wire Wire Line
+	6500 2800 5850 2900
+Text GLabel 6900 2550 1    50   Output ~ 0
+5V_USB
+Wire Wire Line
+	6900 2550 6900 2600
+Wire Wire Line
+	6900 2600 7050 2600
+$Comp
+L power:GND #PWR?
+U 1 1 5EA51ABE
+P 7350 3250
+F 0 "#PWR?" H 7350 3000 50  0001 C CNN
+F 1 "GND" H 7355 3077 50  0000 C CNN
+F 2 "" H 7350 3250 50  0001 C CNN
+F 3 "" H 7350 3250 50  0001 C CNN
+	1    7350 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 3200 7350 3250
+Text GLabel 5950 3400 2    50   Output ~ 0
+S2
+Text GLabel 5950 3500 2    50   Output ~ 0
+S3
+Text GLabel 5950 3800 2    50   Output ~ 0
+LED1
+Text GLabel 5950 3900 2    50   Output ~ 0
+LED2
+Text GLabel 5950 4400 2    50   Output ~ 0
+UART3_TX
+Text GLabel 5950 4500 2    50   Output ~ 0
+UART3_RX
+$Comp
+L Device:R R1
+U 1 1 5EA64BC8
+P 6450 4000
+F 0 "R1" V 6243 4000 50  0000 C CNN
+F 1 "10k" V 6334 4000 50  0000 C CNN
+F 2 "" V 6380 4000 50  0001 C CNN
+F 3 "~" H 6450 4000 50  0001 C CNN
+	1    6450 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5EA677E2
+P 6450 4100
+F 0 "R2" V 6657 4100 50  0000 C CNN
+F 1 "10k" V 6566 4100 50  0000 C CNN
+F 2 "" V 6380 4100 50  0001 C CNN
+F 3 "~" H 6450 4100 50  0001 C CNN
+	1    6450 4100
+	0    -1   1    0   
+$EndComp
+Text GLabel 6700 4000 2    50   Output ~ 0
+SCL_PAD
+Text GLabel 6700 4100 2    50   Output ~ 0
+SDA_PAD
+Wire Wire Line
+	5850 4100 6300 4100
+Wire Wire Line
+	6600 4100 6700 4100
+Wire Wire Line
+	5850 3400 5950 3400
+Wire Wire Line
+	5850 3500 5950 3500
+Wire Wire Line
+	5850 3800 5950 3800
+Wire Wire Line
+	5850 3900 5950 3900
+Wire Wire Line
+	5850 4400 5950 4400
+Wire Wire Line
+	5950 4500 5850 4500
+$Comp
+L Device:Resonator X1
+U 1 1 5EA8EACC
+P 4100 2900
+F 0 "X1" H 4100 3148 50  0000 C CNN
+F 1 "Resonator 8MHz" H 4100 3057 50  0000 C CNN
+F 2 "" H 4075 2900 50  0001 C CNN
+F 3 "~" H 4075 2900 50  0001 C CNN
+	1    4100 2900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2900 4450 2900
+Wire Wire Line
+	3950 2900 3850 2900
+Wire Wire Line
+	3850 3200 4300 3200
+Wire Wire Line
+	4300 3200 4300 3000
+Wire Wire Line
+	4300 3000 4450 3000
+$Comp
+L power:GND #PWR?
+U 1 1 5EA95C49
+P 4100 3100
+F 0 "#PWR?" H 4100 2850 50  0001 C CNN
+F 1 "GND" H 4105 2927 50  0000 C CNN
+F 2 "" H 4100 3100 50  0001 C CNN
+F 3 "" H 4100 3100 50  0001 C CNN
+	1    4100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW?
+U 1 1 5EAA592A
+P 3100 1900
+F 0 "SW?" H 3100 2167 50  0000 C CNN
+F 1 "SW_DIP_x01" H 3100 2076 50  0000 C CNN
+F 2 "" H 3100 1900 50  0001 C CNN
+F 3 "~" H 3100 1900 50  0001 C CNN
+	1    3100 1900
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 1900 0    50   Output ~ 0
+VCC
+$Comp
+L Device:R R_BOOT
+U 1 1 5EAB0304
+P 3450 2150
+F 0 "R_BOOT" H 3381 2104 50  0000 R CNN
+F 1 "10k" H 3381 2195 50  0000 R CNN
+F 2 "" V 3380 2150 50  0001 C CNN
+F 3 "~" H 3450 2150 50  0001 C CNN
+	1    3450 2150
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EAB18D3
+P 3450 2400
+F 0 "#PWR?" H 3450 2150 50  0001 C CNN
+F 1 "GND" H 3455 2227 50  0000 C CNN
+F 2 "" H 3450 2400 50  0001 C CNN
+F 3 "" H 3450 2400 50  0001 C CNN
+	1    3450 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 1900 2800 1900
+Wire Wire Line
+	3400 1900 3450 1900
+Wire Wire Line
+	3450 1900 3450 2000
+Wire Wire Line
+	3450 2400 3450 2300
+Connection ~ 3450 1900
+$Comp
+L Device:C C2
+U 1 1 5EAC83BE
+P 4350 2350
+F 0 "C2" H 4236 2304 50  0000 R CNN
+F 1 "100nF" H 4236 2395 50  0000 R CNN
+F 2 "" H 4388 2200 50  0001 C CNN
+F 3 "~" H 4350 2350 50  0001 C CNN
+	1    4350 2350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6300 4000 5850 4000
+Wire Wire Line
+	6600 4000 6700 4000
+$Comp
+L MCU_ST_STM32F4:STM32F405RGTx U1
+U 1 1 5E9B6E64
+P 5150 3300
+F 0 "U1" H 5150 1411 50  0000 C CNN
+F 1 "STM32F405RGTx" H 5150 1320 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 4550 1600 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 5150 3300 50  0001 C CNN
+	1    5150 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5EAF9997
+P 3900 2350
+F 0 "C1" H 3786 2304 50  0000 R CNN
+F 1 "100nF" H 3786 2395 50  0000 R CNN
+F 2 "" H 3938 2200 50  0001 C CNN
+F 3 "~" H 3900 2350 50  0001 C CNN
+	1    3900 2350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3450 1900 4450 1900
+$Comp
+L power:GND #PWR?
+U 1 1 5EB271FC
+P 3900 2550
+F 0 "#PWR?" H 3900 2300 50  0001 C CNN
+F 1 "GND" V 3905 2422 50  0000 R CNN
+F 2 "" H 3900 2550 50  0001 C CNN
+F 3 "" H 3900 2550 50  0001 C CNN
+	1    3900 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3900 2500 3900 2550
+Wire Wire Line
+	4350 2500 4350 2550
+Wire Wire Line
+	4350 2550 3900 2550
+Connection ~ 3900 2550
+Wire Wire Line
+	4350 2200 4450 2200
+Wire Wire Line
+	4450 2100 3900 2100
+Wire Wire Line
+	3900 2100 3900 2200
+Wire Wire Line
+	3850 2900 3850 3200
+Text GLabel 4350 3500 0    50   Output ~ 0
+VBAT_PAD
+Text GLabel 4350 3600 0    50   Output ~ 0
+RSSI_PAD
+Text GLabel 4350 3700 0    50   Output ~ 0
+Current_PAD
+Text GLabel 4350 3800 0    50   Output ~ 0
+GYRO_INT
+Text GLabel 4350 4000 0    50   Output ~ 0
+UART6_TX
+Text GLabel 4350 4100 0    50   Output ~ 0
+UART6_RX
+Text GLabel 4350 4300 0    50   Output ~ 0
+PPM_IN
+Text GLabel 3250 3900 0    50   Output ~ 0
+5V_USB
+$Comp
+L power:GND #PWR?
+U 1 1 5EB5D374
+P 3700 4300
+F 0 "#PWR?" H 3700 4050 50  0001 C CNN
+F 1 "GND" H 3705 4127 50  0000 C CNN
+F 2 "" H 3700 4300 50  0001 C CNN
+F 3 "" H 3700 4300 50  0001 C CNN
+	1    3700 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EB6D41E
+P 3700 4100
+F 0 "R?" H 3770 4146 50  0000 L CNN
+F 1 "10k" H 3770 4055 50  0000 L CNN
+F 2 "" V 3630 4100 50  0001 C CNN
+F 3 "~" H 3700 4100 50  0001 C CNN
+	1    3700 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EB6E175
+P 3450 3900
+F 0 "R?" V 3243 3900 50  0000 C CNN
+F 1 "10k" V 3334 3900 50  0000 C CNN
+F 2 "" V 3380 3900 50  0001 C CNN
+F 3 "~" H 3450 3900 50  0001 C CNN
+	1    3450 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 3500 4450 3500
+Wire Wire Line
+	4350 3600 4450 3600
+Wire Wire Line
+	4350 3700 4450 3700
+Wire Wire Line
+	4350 3800 4450 3800
+Wire Wire Line
+	3250 3900 3300 3900
+Wire Wire Line
+	3600 3900 3700 3900
+Wire Wire Line
+	3700 3900 3700 3950
+Wire Wire Line
+	3700 4300 3700 4250
+Wire Wire Line
+	3700 3900 4450 3900
+Connection ~ 3700 3900
+Wire Wire Line
+	4350 4000 4450 4000
+Wire Wire Line
+	4450 4100 4350 4100
+Wire Wire Line
+	4350 4300 4450 4300
+$EndSCHEMATC
