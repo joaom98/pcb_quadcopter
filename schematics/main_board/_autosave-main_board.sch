@@ -18,9 +18,9 @@ POWER_LED
 Wire Wire Line
 	10300 1900 10500 1900
 Text GLabel 10400 2100 2    50   Output ~ 0
-M4
+S4
 Text GLabel 10400 2200 2    50   Output ~ 0
-M1
+S1
 $Comp
 L Sensor_Motion:MPU-6000 U3
 U 1 1 5E9D6204
@@ -340,7 +340,7 @@ Wire Wire Line
 Wire Wire Line
 	8300 3100 8300 3400
 Text GLabel 8800 3700 0    50   Output ~ 0
-VBAT_PAD
+BAT+
 Text GLabel 8800 3800 0    50   Output ~ 0
 RSSI_PAD
 Text GLabel 8800 3900 0    50   Output ~ 0
@@ -704,7 +704,7 @@ U 1 1 5E9D4C27
 P 1600 4650
 F 0 "D1" V 1554 4738 50  0000 L CNN
 F 1 "BAT54C" V 1645 4738 50  0000 L CNN
-F 2 "Diode_SMD:D_SOT-23_ANK" H 1675 4775 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1675 4775 50  0001 L CNN
 F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 1520 4650 50  0001 C CNN
 	1    1600 4650
 	0    -1   1    0   
@@ -712,7 +712,7 @@ $EndComp
 Text GLabel 1550 4250 0    50   Input ~ 0
 5V_USB
 Text GLabel 1550 5050 0    50   Input ~ 0
-5V_EXTERNAL
+BAT+
 Wire Wire Line
 	1550 4250 1600 4250
 Wire Wire Line
@@ -828,7 +828,7 @@ F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 2050 6850 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 2050 6000 0    50   Input ~ 0
-5V_EXTERNAL
+BAT+
 Text GLabel 2300 6550 2    50   Output ~ 0
 UART1_RX
 $Comp
@@ -984,7 +984,7 @@ F 3 "~" V 3650 4710 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3800 4250 2    50   Output ~ 0
-VBAT_PAD
+BAT+
 Wire Wire Line
 	3650 4450 3650 4250
 Wire Wire Line
@@ -1003,7 +1003,7 @@ $EndComp
 Wire Wire Line
 	3650 4850 3650 4750
 Text GLabel 5500 6550 1    50   Output ~ 0
-VBAT_PAD
+BAT+
 $Comp
 L Device:R R9
 U 1 1 5EBF0550
@@ -1104,7 +1104,7 @@ F 3 "~" H 8150 7110 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 7600 6600 1    50   Output ~ 0
-VBAT_PAD
+BAT+
 $Comp
 L Device:R R13
 U 1 1 5EED95AE
@@ -1205,7 +1205,7 @@ F 3 "~" H 6050 9510 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 5500 9000 1    50   Output ~ 0
-VBAT_PAD
+BAT+
 $Comp
 L Device:R R10
 U 1 1 5EEF1152
@@ -1306,7 +1306,7 @@ F 3 "~" H 8150 9560 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 7600 9050 1    50   Output ~ 0
-VBAT_PAD
+BAT+
 $Comp
 L Device:R R14
 U 1 1 5EEF11A1
