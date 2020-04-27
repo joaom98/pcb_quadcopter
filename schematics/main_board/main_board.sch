@@ -18,9 +18,9 @@ POWER_LED
 Wire Wire Line
 	10300 1900 10500 1900
 Text GLabel 10400 2100 2    50   Output ~ 0
-M4
+S4
 Text GLabel 10400 2200 2    50   Output ~ 0
-M1
+S1
 $Comp
 L Sensor_Motion:MPU-6000 U3
 U 1 1 5E9D6204
@@ -704,7 +704,7 @@ U 1 1 5E9D4C27
 P 1600 4650
 F 0 "D1" V 1554 4738 50  0000 L CNN
 F 1 "BAT54C" V 1645 4738 50  0000 L CNN
-F 2 "Diode_SMD:D_SOT-23_ANK" H 1675 4775 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1675 4775 50  0001 L CNN
 F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 1520 4650 50  0001 C CNN
 	1    1600 4650
 	0    -1   1    0   
