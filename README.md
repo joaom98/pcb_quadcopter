@@ -11,6 +11,7 @@ So, I have seen some interesting projects online and decided to try developing a
 * [Microhawk at Outcast Dronework - Rotor Riot](https://www.youtube.com/watch?v=aRctXEhmRdY)
 * [MultiWii](http://www.multiwii.com/)
 * [OpenFC Open Hardware Flight Controller - DroneMesh](https://www.youtube.com/playlist?list=PLoPtpxJIxgnYnPrOeGHs3rdhhPgNGIYN5)
+* [FeatherWing quadcopter](https://hackaday.io/project/168441-quadcopter-featherwing-for-huzzah32)
 
 ## Specifications
 
